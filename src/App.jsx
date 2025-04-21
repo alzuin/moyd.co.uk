@@ -240,7 +240,7 @@ function App() {
                             <iframe
                                 src="https://sibforms.com/serve/MUIFAOweXH_DiquxKZzieMrqbzSpSUGI4S34oJBcrZknAOzoe4R0Zg_gn3XFfJpRbt-SSlz0PyKnDjPN5kLeg_0DkzT53d75qjMqb22M3iPACnu3IGC9LwSvmZFVmMb76bjB4d8XUZJuDGNw2BbLDIh9e5MbGqE1FysWVRbwafzWrsD78cNCt03lrAxuI6pp2Vptti50wLKoV5c0"
                                 title="Send a Message"
-                                className="w-full max-w-2xl h-[600px] mx-auto border-none"
+                                className="w-full max-w-2xl h-auto min-h-[700px] mx-auto border-none"
                                 loading="lazy"
                             ></iframe>
                         </div>
@@ -252,7 +252,7 @@ function App() {
                             <iframe
                                 src="https://meet.brevo.com/alberto-zuin/30-minute-meeting"
                                 title="Book a Meeting"
-                                className="w-full max-w-2xl h-[600px] mx-auto border-none"
+                                className="w-full max-w-2xl h-auto min-h-[900px] mx-auto border-none"
                                 loading="lazy"
                             ></iframe>
                         </div>
