@@ -17,13 +17,13 @@ const fadeInUp = {
 import './App.css'
 
 function App() {
-    const [count, setCount] = useState(0)
-    const [mode, setMode] = useState("message"); // or "booking"
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
         script.async = true;
+        script.onload = () => setLoading(false);
         document.body.appendChild(script);
     }, []);
 
@@ -212,10 +212,11 @@ function App() {
                 <section id="contact" className="py-20 bg-white text-center px-4">
                     <h2 className="text-4xl font-bold mb-6">Let’s Talk</h2>
                     <p className="mb-6 max-w-2xl mx-auto text-lg">
-                        Ready to master your tech domain? Choose to send a message or request a meeting below.
+                        Ready to master your tech domain? Book a meeting below — let’s discuss how I can help.
                     </p>
 
                     <div className="mt-10">
+                        {loading && <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-4"></div>}
                         <div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/alberto-zuin?embed=true"></div>
                     </div>
                 </section>
