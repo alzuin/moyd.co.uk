@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { ParallaxBanner } from "react-scroll-parallax";
@@ -19,6 +19,13 @@ import './App.css'
 function App() {
     const [count, setCount] = useState(0)
     const [mode, setMode] = useState("message"); // or "booking"
+
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
 
     return (
         <>
@@ -208,55 +215,9 @@ function App() {
                         Ready to master your tech domain? Choose to send a message or request a meeting below.
                     </p>
 
-                    {/* Toggle */}
-                    <div className="flex justify-center gap-6 mb-10">
-                        <label className="inline-flex items-center">
-                            <input
-                                type="radio"
-                                name="contactMode"
-                                value="message"
-                                checked={mode === "message"}
-                                onChange={() => setMode("message")}
-                                className="mr-2"
-                            />
-                            Send a Message
-                        </label>
-                        <label className="inline-flex items-center">
-                            <input
-                                type="radio"
-                                name="contactMode"
-                                value="booking"
-                                checked={mode === "booking"}
-                                onChange={() => setMode("booking")}
-                                className="mr-2"
-                            />
-                            Book a Meeting
-                        </label>
+                    <div className="mt-10">
+                        <div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/alberto-zuin?embed=true"></div>
                     </div>
-
-                    {/* Message Form */}
-                    {mode === "message" && (
-                        <div className="mt-10">
-                            <iframe
-                                src="https://sibforms.com/serve/MUIFACq-SDGrYw3_xAiwHdpoLEfDg4cN3LuYf1yOPAXfO00f4ZFhcfWzWdqXElE_uyXwN7XHkcYP0qTsgZdTHG9lXTo6pxTTTs9HeQMN-UAMalHqC0DH_9CAsUXhURqOp-UGxqyWhmD4W4n5qtc4q1zBjRDs7CJAQSZesx_grjSWYWyzs29Q63Wd6WadoPGzYpGUhWT6_AeOfb7h"
-                                title="Send a Message"
-                                className="w-full max-w-2xl h-auto min-h-[700px] mx-auto border-none"
-                                loading="lazy"
-                            ></iframe>
-                        </div>
-                    )}
-
-                    {/* Booking Form */}
-                    {mode === "booking" && (
-                        <div className="mt-10">
-                            <iframe
-                                src="https://meet.brevo.com/alberto-zuin/30-minute-meeting"
-                                title="Book a Meeting"
-                                className="w-full max-w-2xl h-auto min-h-[900px] mx-auto border-none"
-                                loading="lazy"
-                            ></iframe>
-                        </div>
-                    )}
                 </section>
 
                 {/* Footer */}
