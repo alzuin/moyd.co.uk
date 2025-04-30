@@ -21,7 +21,7 @@ function App() {
 
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
         script.async = true;
         script.onload = () => setLoading(false);
         document.body.appendChild(script);
@@ -206,7 +206,24 @@ function App() {
                             </div>
                         </motion.div>
                     </div>
+                    {/* Engagement model */}
+                    <div className="mt-12 text-left max-w-4xl mx-auto text-lg leading-relaxed">
+                        <h3 className="text-2xl font-bold mb-4">How We Can Work Together</h3>
+                        <p className="mb-4">
+                            I offer flexible engagement models tailored to your needs — whether you're validating an idea, building momentum, or restructuring tech strategy:
+                        </p>
+                        <ul className="list-disc list-inside space-y-2">
+                            <li><strong>One-time Strategic Review:</strong> Ideal for founders who need a second opinion or guidance before making critical tech decisions.</li>
+                            <li><strong>Project-Based Engagements:</strong> Best for tackling defined scopes like vendor selection, roadmap audit, or AI readiness planning.</li>
+                            <li><strong>Fractional CTO Retainer:</strong> A flexible monthly arrangement (typically 8–16 hours/month) to provide continuous leadership, unblock teams, and drive strategic alignment.</li>
+                        </ul>
+                        <p className="mt-4">
+                            Engagements are outcome-focused, transparent, and tailored to your business stage and pace. Let’s discuss what works best for you.
+                        </p>
+                    </div>
                 </section>
+
+
 
                 {/* Contact Section */}
                 <section id="contact" className="py-20 bg-white text-center px-4">
@@ -217,7 +234,13 @@ function App() {
 
                     <div className="mt-10">
                         {loading && <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-4"></div>}
-                        <div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/alberto-zuin?embed=true"></div>
+                        <div className="flex justify-center">
+                            <div
+                                className="calendly-inline-widget"
+                                data-url="https://calendly.com/a-zuin-moyd/30min"
+                                style={{ width: '100%', maxWidth: '1200px', height: '850px' }}
+                            ></div>
+                        </div>
                     </div>
                 </section>
 
