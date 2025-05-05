@@ -76,7 +76,7 @@ function App() {
                         />
                         <div>
                             <p>
-                                “I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites.”
+                                “Hi, I'm Alberto. I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites.”
                             </p>
                         </div>
                     </div>
@@ -216,15 +216,15 @@ function App() {
                 {/* Footer */}
                 <footer className="bg-gray-100 py-6 text-center text-sm text-gray-500">
                     <p>&copy; {new Date().getFullYear()} MOYD v2.0</p>
-                    {/*<p>*/}
-                    {/*    <a*/}
-                    {/*        href="https://www.linkedin.com/in/alzuin/"*/}
-                    {/*        target="_blank"*/}
-                    {/*        rel="noopener noreferrer"*/}
-                    {/*        className="text-blue-600 hover:underline"*/}
-                    {/*    >*/}
-                    {/*        Connect on LinkedIn*/}
-                    {/*    </a>*/}
+                    <p>
+                        <a
+                            href="https://www.linkedin.com/in/alzuin/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Connect on LinkedIn
+                        </a>
                     {/*    <span className="mx-2">|</span>*/}
                     {/*    <a*/}
                     {/*        href="https://github.com/alzuin/"*/}
@@ -234,7 +234,7 @@ function App() {
                     {/*    >*/}
                     {/*        GitHub*/}
                     {/*    </a>*/}
-                    {/*</p>*/}
+                    </p>
                 </footer>
             </div>
         </>
