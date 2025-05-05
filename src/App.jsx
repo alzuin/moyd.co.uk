@@ -76,7 +76,9 @@ function App() {
                         />
                         <div>
                             <p>
-                                “Hi, I'm Alberto. I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites.”
+                                “Hi, I'm Alberto. I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>
+                                These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites. <br/>
+                                It’s not just advice — it’s a shared investment in helping you build momentum and make the right calls early — so you can move faster, not just further”
                             </p>
                         </div>
                     </div>
@@ -94,15 +96,19 @@ function App() {
                     >
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Weekly 30-min strategy calls</h3>
+                            <p className="text-gray-600">Talk through challenges, roadmaps, or decisions — a consistent space to think clearly and move forward.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Help choosing the right architecture, team, or tech stack</h3>
+                            <p className="text-gray-600">Get a second opinion before you lock in expensive decisions — and avoid months of technical debt.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Fast-turn experiments to test before you build too much</h3>
+                            <p className="text-gray-600">Quickly validate risky assumptions or unknowns with just-enough code and structure.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Supporting a limited number of founders each month to keep engagements focused</h3>
+                            <h3 className="text-2xl font-semibold mb-2">Supporting a limited number of founders</h3>
+                            <p className="text-gray-600">I only work with a few teams each month to keep the support hands-on, focused, and genuinely useful.</p>
                         </div>
                     </motion.div>
                 </section>
@@ -119,12 +125,15 @@ function App() {
                     >
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Funded, founder-led startups without a technical cofounder</h3>
+                            <p className="text-gray-600">You’ve raised money and built traction — but still need a trusted tech voice on your side before hiring full-time.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Early-stage teams feeling the weight of tech debt or dev delays</h3>
+                            <p className="text-gray-600">Things are shipping, but slowly — and the architecture or dev team might be holding you back from scaling smart.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Pre-seed founders shaping their first build plan</h3>
+                            <p className="text-gray-600">You’ve got an idea and early validation — now you want to build right without overcommitting too soon.</p>
                         </div>
                     </motion.div>
                 </section>
@@ -164,16 +173,15 @@ function App() {
                         >
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🗺️ Map</h3>
-                                <p>A one-time strategic review to evaluate architecture, risks, and roadmap alignment.<br />
-                                    This fixed-cost engagement is fully waived if we move forward into an ongoing collaboration.</p>
+                                <p>A strategic review to get clarity on your architecture, roadmap, and risks — so you can move forward with confidence. Often the starting point for deeper collaboration.</p>
                             </div>
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🧠 Optimize</h3>
-                                <p>Define the right tech decisions, architecture, AI strategy, and vendor selection — tailored to your stage and goals.</p>
+                                <p>Define smart, stage-appropriate tech decisions — from stack and system design to AI integration and vendor selection.</p>
                             </div>
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🚀 Your Domain</h3>
-                                <p>Execute confidently with ongoing strategic guidance through a flexible fractional CTO arrangement (e.g., 8–16 hours/month).</p>
+                                <p>Execute with ongoing strategic support — staying focused, moving fast, and avoiding costly rewrites or misfires.</p>
                             </div>
                         </motion.div>
                     </div>
@@ -181,10 +189,22 @@ function App() {
                     <div className="mt-12 text-left max-w-4xl mx-auto text-lg leading-relaxed">
                         <h3 className="text-2xl font-bold mb-4">How We Can Work Together</h3>
                         <ul className="list-disc list-inside space-y-2">
-                            <li><strong>One-time Strategic Review:</strong> 30-min intro call (free)</li>
-                            <li><strong>Project-Based Engagements:</strong> If there’s a fit, we book weekly working sessions</li>
-                            <li><strong>Small-scope technical probes (hands-on experiments when needed)</strong></li>
-                            <li><strong>Low-commitment, high-trust — designed to support without pressure.</strong></li>
+                            <li>
+                                <strong>One-time Strategic Review:</strong><br />
+                                A 30-minute intro call (free) to explore needs, constraints, and fit.
+                            </li>
+                            <li>
+                                <strong>Project-Based Engagements:</strong> <br />
+                                If there’s alignment, we work together in short, focused cycles — usually anchored by weekly calls.
+                            </li>
+                            <li>
+                                <strong>Small-scope technical probes</strong><br />
+                                When needed, I’ll get hands-on to test risky ideas or evaluate options before you commit.
+                            </li>
+                            <li>
+                                <strong>Low-commitment, high-trust:</strong><br />
+                                Everything is designed to support your team — without pressure, lock-ins, or jargon.
+                            </li>
                         </ul>
                         <p className="mt-4">
                             Engagements are outcome-focused, transparent, and tailored to your business stage and pace. Let’s discuss what works best for you.
