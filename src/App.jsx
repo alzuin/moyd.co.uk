@@ -45,12 +45,13 @@ function App() {
                             Master of Your (Tech) Domain
                         </motion.h1>
                         <motion.p
-                            className="text-2xl md:text-3xl mt-4 max-w-3xl drop-shadow"
+                            className="text-2xl md:text-3xl mt-4 max-w-7xl drop-shadow"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
                         >
-                            Fractional CTO services for startups and scale-ups — build with clarity, scale with confidence.
+                            Technical clarity for early-stage founders — before you commit to a stack, a hire, or the wrong build. <br/>
+                            I work with a few founders each month to bring clarity to high-stakes tech decisions — before they commit time, money, or hires.
                         </motion.p>
                         <motion.a
                             href="#contact"
@@ -59,14 +60,14 @@ function App() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6, duration: 0.5 }}
                         >
-                            Let’s Talk
+                            Book a Call
                         </motion.a>
                     </div>
                 </ParallaxBanner>
 
                 {/* About Section */}
                 <section className="py-20 bg-white px-4">
-                    <h2 className="text-4xl font-bold mb-10 text-center">Hi, I'm Alberto</h2>
+                    <h2 className="text-4xl font-bold mb-10 text-center">Who’s Behind MOYD</h2>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto text-lg leading-relaxed text-center md:text-left">
                         <img
                             src={AlbertoPhoto}
@@ -75,18 +76,7 @@ function App() {
                         />
                         <div>
                             <p>
-                                I’m Alberto Zuin, a fractional CTO with 25+ years of leadership in fast-moving tech companies.
-                                From launching complex, regulated products in new markets to managing ISO27001 audits and AI strategy,
-                                I’ve helped companies make the right decisions at the right time — without overbuilding.
-                            </p>
-                            <br />
-                            <p>
-                                MOYD started over a decade ago as my original consultancy — helping clients tackle early-stage tech decisions. Today, MOYD v2.0 brings that legacy into the AI era with sharper focus and broader experience.
-                            </p>
-                            <br />
-                            <p>
-                                <strong>Certifications:</strong> CITP, CGEIT, CISM, ITIL, AWS, PMI-ACP<br />
-                                <strong>Academic:</strong> MBA Tech Mgmt, MSc in Artificial Intelligence
+                                “I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites.”
                             </p>
                         </div>
                     </div>
@@ -94,37 +84,25 @@ function App() {
 
                 {/* Services Section */}
                 <section className="py-20 bg-gray-50 px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-10">What I Do</h2>
+                    <h2 className="text-4xl font-bold mb-10">How I Help Founders</h2>
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto"
                         variants={fadeInUp}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Tech Leadership</h3>
-                            <p>On-demand strategic tech guidance — from MVP to roadmap execution.</p>
+                            <h3 className="text-2xl font-semibold mb-2">Weekly 30-min strategy calls</h3>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Architecture & AI Readiness</h3>
-                            <p>Designing scalable systems with future-proof tech and AI integration in mind.</p>
+                            <h3 className="text-2xl font-semibold mb-2">Help choosing the right architecture, team, or tech stack</h3>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Security & Governance</h3>
-                            <p>Compliance, ISO27001, and risk reduction strategies baked into your stack.</p>
+                            <h3 className="text-2xl font-semibold mb-2">Fast-turn experiments to test before you build too much</h3>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Team Strategy</h3>
-                            <p>Helping you hire or structure internal/external tech teams effectively.</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Vendor Evaluation</h3>
-                            <p>Support for choosing the right tools, platforms, or outsourced partners.</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">Product-Market Fit Acceleration</h3>
-                            <p>Helping early-stage teams validate product direction and avoid costly missteps in tech execution.</p>
+                            <h3 className="text-2xl font-semibold mb-2">Supporting a limited number of founders each month to keep engagements focused</h3>
                         </div>
                     </motion.div>
                 </section>
@@ -133,32 +111,25 @@ function App() {
                 <section className="py-20 bg-white px-4 text-center">
                     <h2 className="text-4xl font-bold mb-10">Who It’s For</h2>
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
                         variants={fadeInUp}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className="p-6 bg-gray-50 rounded shadow">
-                            <h3 className="text-xl font-semibold mb-2">Startup Founders</h3>
-                            <p>Launching your MVP with confidence and avoiding common tech pitfalls.</p>
+                            <h3 className="text-xl font-semibold mb-2">Funded, founder-led startups without a technical cofounder</h3>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
-                            <h3 className="text-xl font-semibold mb-2">Scale-Up Execs</h3>
-                            <p>Need a CTO but not full-time? Get expert leadership when and where you need it.</p>
+                            <h3 className="text-xl font-semibold mb-2">Early-stage teams feeling the weight of tech debt or dev delays</h3>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
-                            <h3 className="text-xl font-semibold mb-2">Investors</h3>
-                            <p>Want a tech sanity check before funding or reviewing a portfolio’s progress?</p>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded shadow">
-                            <h3 className="text-xl font-semibold mb-2">Non-Technical Teams</h3>
-                            <p>Looking for clarity and direction to align business goals with tech execution.</p>
+                            <h3 className="text-xl font-semibold mb-2">Pre-seed founders shaping their first build plan</h3>
                         </div>
                     </motion.div>
                 </section>
 
-                {/* Testimonials Section */}
+                {/* Testimonials Section
                 <section className="py-20 bg-gray-50 px-4 text-center">
                     <h2 className="text-4xl font-bold mb-10">What People Say</h2>
                     <div className="max-w-4xl mx-auto space-y-8">
@@ -175,7 +146,7 @@ function App() {
                             <span className="block mt-2 font-semibold">— Angel Investor</span>
                         </blockquote>
                     </div>
-                </section>
+                </section>*/}
 
                 {/* MOYD Method Section */}
                 <section className="py-20 bg-white text-center px-4">
@@ -209,13 +180,11 @@ function App() {
                     {/* Engagement model */}
                     <div className="mt-12 text-left max-w-4xl mx-auto text-lg leading-relaxed">
                         <h3 className="text-2xl font-bold mb-4">How We Can Work Together</h3>
-                        <p className="mb-4">
-                            I offer flexible engagement models tailored to your needs — whether you're validating an idea, building momentum, or restructuring tech strategy:
-                        </p>
                         <ul className="list-disc list-inside space-y-2">
-                            <li><strong>One-time Strategic Review:</strong> Ideal for founders who need a second opinion or guidance before making critical tech decisions.</li>
-                            <li><strong>Project-Based Engagements:</strong> Best for tackling defined scopes like vendor selection, roadmap audit, or AI readiness planning.</li>
-                            <li><strong>Fractional CTO Retainer:</strong> A flexible monthly arrangement (typically 8–16 hours/month) to provide continuous leadership, unblock teams, and drive strategic alignment.</li>
+                            <li><strong>One-time Strategic Review:</strong> 30-min intro call (free)</li>
+                            <li><strong>Project-Based Engagements:</strong> If there’s a fit, we book weekly working sessions</li>
+                            <li><strong>Small-scope technical probes (hands-on experiments when needed)</strong></li>
+                            <li><strong>Low-commitment, high-trust — designed to support without pressure.</strong></li>
                         </ul>
                         <p className="mt-4">
                             Engagements are outcome-focused, transparent, and tailored to your business stage and pace. Let’s discuss what works best for you.
@@ -227,9 +196,9 @@ function App() {
 
                 {/* Contact Section */}
                 <section id="contact" className="py-20 bg-white text-center px-4">
-                    <h2 className="text-4xl font-bold mb-6">Let’s Talk</h2>
+                    <h2 className="text-4xl font-bold mb-6">Book a Call</h2>
                     <p className="mb-6 max-w-2xl mx-auto text-lg">
-                        Ready to master your tech domain? Book a meeting below — let’s discuss how I can help.
+                        Ready to master your tech domain? <br />Book a meeting below: ’m currently opening 2–3 founder slots this quarter.
                     </p>
 
                     <div className="mt-10">
@@ -246,26 +215,26 @@ function App() {
 
                 {/* Footer */}
                 <footer className="bg-gray-100 py-6 text-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Alberto Zuin – MOYD v2.0</p>
-                    <p>
-                        <a
-                            href="https://www.linkedin.com/in/alzuin/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                        >
-                            Connect on LinkedIn
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a
-                            href="https://github.com/alzuin/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                        >
-                            GitHub
-                        </a>
-                    </p>
+                    <p>&copy; {new Date().getFullYear()} MOYD v2.0</p>
+                    {/*<p>*/}
+                    {/*    <a*/}
+                    {/*        href="https://www.linkedin.com/in/alzuin/"*/}
+                    {/*        target="_blank"*/}
+                    {/*        rel="noopener noreferrer"*/}
+                    {/*        className="text-blue-600 hover:underline"*/}
+                    {/*    >*/}
+                    {/*        Connect on LinkedIn*/}
+                    {/*    </a>*/}
+                    {/*    <span className="mx-2">|</span>*/}
+                    {/*    <a*/}
+                    {/*        href="https://github.com/alzuin/"*/}
+                    {/*        target="_blank"*/}
+                    {/*        rel="noopener noreferrer"*/}
+                    {/*        className="text-blue-600 hover:underline"*/}
+                    {/*    >*/}
+                    {/*        GitHub*/}
+                    {/*    </a>*/}
+                    {/*</p>*/}
                 </footer>
             </div>
         </>
