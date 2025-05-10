@@ -32,26 +32,30 @@ function App() {
             <div className="font-sans text-gray-800">
                 {/* Hero Section with Parallax */}
                 <ParallaxBanner
-                    layers={[{ image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80", speed: -60 }]}
+                    layers={[{ image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80", speed: -60 },
+                    { speed: 0, expanded: false, children: <div className="absolute inset-0 bg-black opacity-50" /> }]}
                     className="h-screen"
                 >
-                    <div className="flex flex-col justify-center items-center h-full text-white text-center px-4 bg-black/40">
+                    <div className="flex flex-col justify-center items-center h-full text-white text-center px-4 ">
                         <motion.h1
-                            className="text-6xl md:text-7xl lg:text-8xl font-extrabold drop-shadow-lg"
+                            className="text-6xl md:text-7xl lg:text-8xl font-extrabold drop-shadow-lg p-4 rounded"
                             initial={{ opacity: 0, y: -30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                         >
                             Master of Your (Tech) Domain
                         </motion.h1>
+                        <motion.h2
+                            className="text-3xl md:text-4xl font-bold mt-6 drop-shadow-lg p-4 rounded">
+                            Technical Clarity for Founders
+                        </motion.h2>
                         <motion.p
-                            className="text-2xl md:text-3xl mt-4 max-w-7xl drop-shadow"
+                            className="text-2xl md:text-3xl mt-4 max-w-7xl drop-shadow-lg p-4 rounded"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
                         >
-                            Technical clarity for early-stage founders — before you commit to a stack, a hire, or the wrong build. <br/>
-                            I work with a few founders each month to bring clarity to high-stakes tech decisions — before they commit time, money, or hires.
+                            Each month, I help founders avoid expensive tech mistakes <br/> before they write a line of code or sign a single contract.
                         </motion.p>
                         <motion.a
                             href="#contact"
@@ -77,8 +81,8 @@ function App() {
                         <div>
                             <p>
                                 “Hi, I'm Alberto. I’ve led the tech side of a venture-backed SaaS from MVP to scale. <br/>
-                                These days, I work with a small number of early-stage founders — offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites. <br/>
-                                It’s not just advice — it’s a shared investment in helping you build momentum and make the right calls early — so you can move faster, not just further”
+                                These days, I work with a small number of early-stage founders, offering clear thinking, hands-on experiments, and strategic guidance before they commit to full-time hires or expensive rewrites. <br/>
+                                It’s not just advice: it’s a shared investment in helping you build momentum and make the right calls early so you can move faster, not just further”
                             </p>
                         </div>
                     </div>
@@ -96,11 +100,11 @@ function App() {
                     >
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Weekly 30-min strategy calls</h3>
-                            <p className="text-gray-600">Talk through challenges, roadmaps, or decisions — a consistent space to think clearly and move forward.</p>
+                            <p className="text-gray-600">Talk through challenges, roadmaps, or decisions: a consistent space to think clearly and move forward.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Help choosing the right architecture, team, or tech stack</h3>
-                            <p className="text-gray-600">Get a second opinion before you lock in expensive decisions — and avoid months of technical debt.</p>
+                            <p className="text-gray-600">Get a second opinion before you lock in expensive decisions and avoid months of technical debt.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h3 className="text-2xl font-semibold mb-2">Fast-turn experiments to test before you build too much</h3>
@@ -125,15 +129,15 @@ function App() {
                     >
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Funded, founder-led startups without a technical cofounder</h3>
-                            <p className="text-gray-600">You’ve raised money and built traction — but still need a trusted tech voice on your side before hiring full-time.</p>
+                            <p className="text-gray-600">You’ve raised money and built traction, but still need a trusted tech voice on your side before hiring full-time.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Early-stage teams feeling the weight of tech debt or dev delays</h3>
-                            <p className="text-gray-600">Things are shipping, but slowly — and the architecture or dev team might be holding you back from scaling smart.</p>
+                            <p className="text-gray-600">Things are shipping, but slowly, and the architecture or dev team might be holding you back from scaling smart.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded shadow">
                             <h3 className="text-xl font-semibold mb-2">Pre-seed founders shaping their first build plan</h3>
-                            <p className="text-gray-600">You’ve got an idea and early validation — now you want to build right without overcommitting too soon.</p>
+                            <p className="text-gray-600">You’ve got an idea and early validation; now you want to build right without overcommitting too soon.</p>
                         </div>
                     </motion.div>
                 </section>
@@ -173,15 +177,15 @@ function App() {
                         >
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🗺️ Map</h3>
-                                <p>A strategic review to get clarity on your architecture, roadmap, and risks — so you can move forward with confidence. Often the starting point for deeper collaboration.</p>
+                                <p>A strategic review to get clarity on your architecture, roadmap, and risks, so you can move forward with confidence. Often the starting point for deeper collaboration.</p>
                             </div>
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🧠 Optimize</h3>
-                                <p>Define smart, stage-appropriate tech decisions — from stack and system design to AI integration and vendor selection.</p>
+                                <p>Define smart, stage-appropriate tech decisions, from stack and system design to AI integration and vendor selection.</p>
                             </div>
                             <div className="p-6 bg-gray-50 rounded-lg shadow text-left">
                                 <h3 className="text-2xl font-semibold mb-2">🚀 Your Domain</h3>
-                                <p>Execute with ongoing strategic support — staying focused, moving fast, and avoiding costly rewrites or misfires.</p>
+                                <p>Execute with ongoing strategic support, staying focused, moving fast, and avoiding costly rewrites or misfires.</p>
                             </div>
                         </motion.div>
                     </div>
@@ -195,7 +199,7 @@ function App() {
                             </li>
                             <li>
                                 <strong>Project-Based Engagements:</strong> <br />
-                                If there’s alignment, we work together in short, focused cycles — usually anchored by weekly calls.
+                                If there’s alignment, we work together in short, focused cycles, usually anchored by weekly calls.
                             </li>
                             <li>
                                 <strong>Small-scope technical probes</strong><br />
@@ -203,7 +207,7 @@ function App() {
                             </li>
                             <li>
                                 <strong>Low-commitment, high-trust:</strong><br />
-                                Everything is designed to support your team — without pressure, lock-ins, or jargon.
+                                Everything is designed to support your team without pressure, lock-ins, or jargon.
                             </li>
                         </ul>
                         <p className="mt-4">
@@ -218,7 +222,7 @@ function App() {
                 <section id="contact" className="py-20 bg-white text-center px-4">
                     <h2 className="text-4xl font-bold mb-6">Book a Call</h2>
                     <p className="mb-6 max-w-2xl mx-auto text-lg">
-                        Ready to master your tech domain? <br />Book a meeting below: ’m currently opening 2–3 founder slots this quarter.
+                        Ready to master your tech domain? <br />Book a meeting below: I’m currently opening 2–3 founder slots this quarter.
                     </p>
 
                     <div className="mt-10">
@@ -235,7 +239,7 @@ function App() {
 
                 {/* Footer */}
                 <footer className="bg-gray-100 py-6 text-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} MOYD v2.0</p>
+                    <p>&copy; {new Date().getFullYear()} MOYD LTD v2.0</p>
                     <p>
                         <a
                             href="https://www.linkedin.com/in/alzuin/"
