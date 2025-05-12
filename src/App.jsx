@@ -66,6 +66,15 @@ function App() {
                         >
                             Book a Call
                         </motion.a>
+                        <motion.a
+                            href="/download"
+                            className="mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-full text-lg transition z-10"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.8, duration: 0.5 }}
+                        >
+                            Get the Free CTO Toolkit
+                        </motion.a>
                     </div>
                 </ParallaxBanner>
 
