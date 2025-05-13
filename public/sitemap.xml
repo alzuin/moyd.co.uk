@@ -4,4 +4,8 @@
         <loc>https://moyd.co.uk/</loc>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://moyd.co.uk/security</loc>
+        <priority>0.8</priority>
+    </url>
 </urlset>

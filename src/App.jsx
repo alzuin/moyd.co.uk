@@ -4,6 +4,8 @@ import Lottie from "lottie-react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import MoydAnimation from "./assets/moyd-method.json";
 import AlbertoPhoto from './assets/alberto.jpg';
+import useGTMPageView from './hooks/useGTMPageView';
+import { Helmet } from 'react-helmet-async';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -19,6 +21,8 @@ import './App.css'
 function App() {
     const [loading, setLoading] = useState(true);
 
+    useGTMPageView();
+
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -29,6 +33,19 @@ function App() {
 
     return (
         <>
+            <Helmet>
+                <title>Moyd: Master Of Your (Tech) Domain | Tech Clarity for Startup Founders</title>
+                <meta name="description" content="Helping early-stage founders make high-stakes tech decisions with confidence — before hiring a full-time CTO." />
+                <meta property="og:title" content="MOYD — Tech Clarity for Startup Founders" />
+                <meta property="og:description" content="Tech leadership, AI strategy, and scalable solutions for startups." />
+                <meta property="og:image" content="https://moyd.co.uk/moyd-banner.png" />
+                <meta property="og:url" content="https://moyd.co.uk" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="MOYD – Fractional CTO Services" />
+                <meta name="twitter:description" content="A strategic tech partner for founder-led teams making their first serious build decisions." />
+                <meta name="twitter:image" content="https://moyd.co.uk/moyd-banner.png" />
+            </Helmet>
             <div className="font-sans text-gray-800">
                 {/* Hero Section with Parallax */}
                 <ParallaxBanner
@@ -258,15 +275,15 @@ function App() {
                         >
                             Connect on LinkedIn
                         </a>
-                    {/*    <span className="mx-2">|</span>*/}
-                    {/*    <a*/}
-                    {/*        href="https://github.com/alzuin/"*/}
-                    {/*        target="_blank"*/}
-                    {/*        rel="noopener noreferrer"*/}
-                    {/*        className="text-blue-600 hover:underline"*/}
-                    {/*    >*/}
-                    {/*        GitHub*/}
-                    {/*    </a>*/}
+                        <span className="mx-2">|</span>
+                        Looking for help with security audits? Visit our <a
+                            href="/security"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Information Security page
+                        </a>
                     </p>
                 </footer>
             </div>
