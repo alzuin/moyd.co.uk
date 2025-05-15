@@ -80,19 +80,19 @@ const Security = () => {
                     <h2 className="text-4xl font-bold mb-10">The MOYD Security Method</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto text-left">
                         <div className="p-6 bg-gray-50 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">🧭 Map the Gaps</h3>
+                            <h3 className="text-2xl font-semibold mb-2">Map the Gaps</h3>
                             <p>Run a fast, focused gap analysis against ISO27001, PCI-DSS or SOC 2 to identify what’s missing and where to start.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">🛠️ Organize Controls</h3>
+                            <h3 className="text-2xl font-semibold mb-2">Organize Controls</h3>
                             <p>Design a lean, effective control framework aligned with your actual risks — no bloat, just clarity.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">📄 Your Policies</h3>
+                            <h3 className="text-2xl font-semibold mb-2">Your Policies</h3>
                             <p>Get clean, practical policies and evidence templates — ready for onboarding, audits, and growth.</p>
                         </div>
                         <div className="p-6 bg-gray-50 rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-2">🔍 Drive Audit Success</h3>
+                            <h3 className="text-2xl font-semibold mb-2">Drive Audit Success</h3>
                             <p>Hands-on support for internal audits, supplier checks, and the final sprint to ISO27001, PCI-DSS or SOC 2 certification.</p>
                         </div>
                     </div>
