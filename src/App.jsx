@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import MoydAnimation from "./assets/moyd-method.json";
 import AlbertoPhoto from './assets/alberto.jpg';
+import LogoLight from './assets/MOYD-LTD-R1-02.png';
 import useGTMPageView from './hooks/useGTMPageView';
 import { Helmet } from 'react-helmet-async';
 
@@ -54,14 +55,22 @@ function App() {
                     className="h-screen"
                 >
                     <div className="flex flex-col justify-center items-center h-full text-white text-center px-4 ">
-                        <motion.h1
-                            className="text-6xl md:text-7xl lg:text-8xl font-extrabold drop-shadow-lg p-4 rounded"
+                        {/*<motion.h1*/}
+                        {/*    className="text-6xl md:text-7xl lg:text-8xl font-extrabold drop-shadow-lg p-4 rounded"*/}
+                        {/*    initial={{ opacity: 0, y: -30 }}*/}
+                        {/*    animate={{ opacity: 1, y: 0 }}*/}
+                        {/*    transition={{ duration: 0.8 }}*/}
+                        {/*>*/}
+                        {/*    Master of Your (Tech) Domain*/}
+                        {/*</motion.h1>*/}
+                        <motion.img
+                            src={LogoLight}
+                            alt="MOYD Logo"
+                            className="w-96 md:w-[500px] lg:w-[600px] drop-shadow-lg p-4 rounded"
                             initial={{ opacity: 0, y: -30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                        >
-                            Master of Your (Tech) Domain
-                        </motion.h1>
+                        />
                         <motion.h2
                             className="text-3xl md:text-4xl font-bold mt-6 drop-shadow-lg p-4 rounded">
                             Technical Clarity for Founders

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { Helmet } from 'react-helmet-async';
+import LogoLight from './assets/MOYD-LTD-R1-02.png';
 
 const Security = () => {
     const [loading, setLoading] = useState(true);
@@ -37,6 +38,14 @@ const Security = () => {
                     className="h-screen"
                 >
                     <div className="flex flex-col justify-center items-center h-full text-white text-center px-4">
+                        <motion.img
+                            src={LogoLight}
+                            alt="MOYD Logo"
+                            className="w-96 md:w-[500px] lg:w-[600px] drop-shadow-lg p-4 rounded"
+                            initial={{ opacity: 0, y: -30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                        />
                         <motion.h1
                             className="text-5xl md:text-6xl lg:text-7xl font-extrabold drop-shadow-lg"
                             initial={{ opacity: 0, y: -30 }}

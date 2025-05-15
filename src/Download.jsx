@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './App.css';
+import LogoLight from "./assets/MOYD-LTD-R1-02.png";
 
 function Download() {
     const [formData, setFormData] = useState({ name: '', email: '', company: '' });
@@ -44,6 +45,14 @@ function Download() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
+                <motion.img
+                    src={LogoLight}
+                    alt="MOYD Logo"
+                    className="w-96 md:w-[500px] lg:w-[600px] drop-shadow-lg p-4 rounded"
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                />
                 <motion.h1
                     className="text-4xl font-bold text-center mb-6"
                     initial={{ opacity: 0, y: -20 }}
