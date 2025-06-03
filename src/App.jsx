@@ -177,24 +177,24 @@ function App() {
                     </motion.div>
                 </section>
 
-                {/* Testimonials Section
+                {/* Testimonials Section  */}
                 <section className="py-20 bg-gray-50 px-4 text-center">
                     <h2 className="text-4xl font-bold mb-10">What People Say</h2>
                     <div className="max-w-4xl mx-auto space-y-8">
                         <blockquote className="italic text-lg">
-                            “Alberto gave us the clarity we needed to understand our gaps in information security.”<br />
-                            <span className="block mt-2 font-semibold">— Founder, early-stage sports betting startup</span>
+                            “Alberto helped shape our early tech strategy and architecture. His guidance set us on the right path from day one, helping us launch a focused MVP and avoid costly rework later.”<br />
+                            <span className="block mt-2 font-semibold">— Diana Simpson Hernandez - PropMatchIQ CEO</span>
                         </blockquote>
-                        <blockquote className="italic text-lg">
+                        {/*<blockquote className="italic text-lg">
                             “We needed a CTO, but weren’t ready to hire one full-time. Alberto filled that role seamlessly and helped us scale with confidence.”<br />
                             <span className="block mt-2 font-semibold">— CEO, Real Estate SaaS startup</span>
                         </blockquote>
                         <blockquote className="italic text-lg">
                             “Alberto is the way to go to assess the technical posture of a possible investment.”<br />
                             <span className="block mt-2 font-semibold">— Angel Investor</span>
-                        </blockquote>
+                        </blockquote>*/}
                     </div>
-                </section>*/}
+                </section>
 
                 {/* MOYD Method Section */}
                 <section className="py-20 bg-white text-center px-4">
