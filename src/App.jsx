@@ -185,11 +185,11 @@ function App() {
                             “Alberto helped shape our early tech strategy and architecture. His guidance set us on the right path from day one, helping us launch a focused MVP and avoid costly rework later.”<br />
                             <span className="block mt-2 font-semibold">— Diana Simpson Hernandez - PropMatchIQ CEO</span>
                         </blockquote>
-                        {/*<blockquote className="italic text-lg">
-                            “We needed a CTO, but weren’t ready to hire one full-time. Alberto filled that role seamlessly and helped us scale with confidence.”<br />
-                            <span className="block mt-2 font-semibold">— CEO, Real Estate SaaS startup</span>
-                        </blockquote>
                         <blockquote className="italic text-lg">
+                            “When our pilot launched faster than planned and we had no tech team in place, Alberto went beyond mentoring: he stepped in with calm, human support to help me turn the idea into something real.”<br />
+                            <span className="block mt-2 font-semibold">— Izzy Mintus - Forma Technology Founder</span>
+                        </blockquote>
+                        {/*<blockquote className="italic text-lg">
                             “Alberto is the way to go to assess the technical posture of a possible investment.”<br />
                             <span className="block mt-2 font-semibold">— Angel Investor</span>
                         </blockquote>*/}
