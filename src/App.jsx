@@ -183,11 +183,31 @@ function App() {
                     <div className="max-w-4xl mx-auto space-y-8">
                         <blockquote className="italic text-lg">
                             “Alberto helped shape our early tech strategy and architecture. His guidance set us on the right path from day one, helping us launch a focused MVP and avoid costly rework later.”<br />
-                            <span className="block mt-2 font-semibold">— Diana Simpson Hernandez - PropMatchIQ CEO</span>
+                            <span className="block mt-2 font-semibold">
+                                — Diana Simpson Hernandez, CEO of{" "}
+                                <a
+                                    href="https://propmatchiq.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-black underline"
+                                >
+                                    PropMatchIQ
+                                </a>
+                            </span>
                         </blockquote>
                         <blockquote className="italic text-lg">
                             “When our pilot launched faster than planned and we had no tech team in place, Alberto went beyond mentoring: he stepped in with calm, human support to help me turn the idea into something real.”<br />
-                            <span className="block mt-2 font-semibold">— Izzy Mintus - Forma Technology Founder</span>
+                            <span className="block mt-2 font-semibold">
+                                — Izzy Mintus, Founder of{" "}
+                                <a
+                                    href="https://officialforma.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-black underline"
+                                >
+                                    Forma Technology
+                                </a>
+                            </span>
                         </blockquote>
                         {/*<blockquote className="italic text-lg">
                             “Alberto is the way to go to assess the technical posture of a possible investment.”<br />
