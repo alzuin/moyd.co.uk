@@ -7,6 +7,7 @@ import AlbertoPhoto from './assets/alberto.jpg';
 import LogoLight from './assets/MOYD-LTD-R1-02.png';
 import useGTMPageView from './hooks/useGTMPageView';
 import { Helmet } from 'react-helmet-async';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -281,14 +282,56 @@ function App() {
                     </p>
 
                     <div className="mt-10">
-                        {loading && <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-4"></div>}
+                        {/* keep your spinner */}
+                        {loading && (
+                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-4"></div>
+                        )}
+
+                        {/* Cal.com embed */}
                         <div className="flex justify-center">
-                            <div
-                                className="calendly-inline-widget"
-                                data-url="https://calendly.com/a-zuin-moyd/30min"
-                                style={{ width: '100%', maxWidth: '1200px', height: '850px' }}
-                            ></div>
+                            <div className="w-full max-w-[1200px]" style={{ height: 850 }}>
+                                <Cal
+                                    namespace="moyd-30min"               // arbitrary but stable
+                                    calLink="alberto-zuin-moyd/30min"    // your Cal.com username/event slug
+                                    style={{ width: "100%", height: "100%", overflow: "auto" }}
+                                    config={{
+                                        layout: "month_view",              // 'month_view' | 'week_view' | 'column_view'
+                                        theme: "system",                   // respects dark mode automatically
+                                        hideEventTypeDetails: false,
+                                        // Optional: prefill fields if you have them
+                                        // prefill: { name: "First Last", email: "user@domain.com" }
+                                    }}
+                                    onLoad={() => setLoading(false)}
+                                    // Fire GTM/analytics on successful booking
+                                    onBookingSuccessful={() => {
+                                        try {
+                                            // GTM-friendly event
+                                            window.dataLayer = window.dataLayer || [];
+                                            window.dataLayer.push({
+                                                event: "cal_booking_success",
+                                                cal_event: "30min",
+                                                origin: "moyd.co.uk",
+                                            });
+                                            console.log("Cal.com booking created successfully");
+                                        } catch (e) {}
+                                    }}
+                                />
+                            </div>
                         </div>
+
+                        {/* No-JS fallback link (good for SEO/accessibility) */}
+                        <noscript>
+                            <div className="mt-4">
+                                <a
+                                    className="text-blue-600 underline"
+                                    href="https://cal.com/alberto-zuin-moyd/30min"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Open booking page
+                                </a>
+                            </div>
+                        </noscript>
                     </div>
                 </section>
 
